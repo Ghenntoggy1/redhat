@@ -1,0 +1,9 @@
+.list-underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+.list-underline::before {
+    content: "➤";
+    margin-right: 0.5rem;
+  }
+  
