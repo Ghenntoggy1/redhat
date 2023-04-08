@@ -2,10 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react'
 
+import Header from './Header';
+
 function App() {
   return (
     <ChakraProvider>
-      <TheRestOfYourApplication />
+      <App />
+      <Header/>
     </ChakraProvider>
   );
 }
