@@ -11,8 +11,15 @@ export default function Dalle() {
         <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
             <GridItem colSpan={0}/>
             <GridItem colSpan={3}>
-                <Container bg="#FFFFFF" alignSelf="center" >
-                    <Box w="full" minHeight="78vh" h="full"  boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)" borderRadius="6px" aligItem="Center">
+                <Container alignSelf="center" >
+                    <Box w="full"
+                         minHeight="78vh"
+                         h="full"
+                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
+                         borderRadius="6px"
+                         aligItem="Center"
+                         background="white"
+                    >
                         <VStack alignItems="center" spacing={4} flexDir="column" paddingTop="40px">
                             <Image src={Images.Image1} alt="otter1" w="200px" h="200px"/>
                             <HStack spacing={1}>
