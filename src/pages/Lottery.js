@@ -46,15 +46,23 @@ function lotto() {
                     <Text textAlign="center" fontWeight="bold">
                         Awards
                     </Text>
-
-                    <HStack>
+                    <Center>
+                        <HStack>
                         <Image src="https://onlinestore.worldwideticketcraft.com/files/subscribers/1c2e84aa-5eb2-4ccd-8589-eb430de107e2/sites/3135f329-d86b-4035-8dc9-0947218fab4d/products/Product_3ac5de02-28f8-4a79-b3f9-006b352d4e44_xlarge.png" w="200px"/>
                         <Image src="https://o.remove.bg/downloads/a543c82f-fc69-4105-9b06-708560fa6f3d/images-removebg-preview.png" w="200px"/>
-
-                    </HStack>
+                        <Image src="https://o.remove.bg/downloads/edd00ed1-6c84-4de7-ba05-bf1dc6d5c5de/pc-solo3-black-thrqtr-left-removebg-preview.png" w="200px"/>
+                        </HStack>
+                    </Center>
+                    <Center>
                     <HStack>
+                        <Image src="https://o.remove.bg/downloads/df3bb207-f763-47c8-b195-bd34821b4ba6/6613f73d72328f430c6e55e3de5d3acccf-24-parenting-books-1.rsquare.w700-removebg-preview.png" w="100px"/>
+                        <Image src="" w="100px"/>
+                        <Image src="" w="100px"/>
+                        <Image src="" w="100px"/>
+                        <Image src="" w="100px"/>
 
                     </HStack>
+                    </Center>
                     <Text textAlign="center" fontWeight="bold">
                         Sponsors:
                     </Text>
