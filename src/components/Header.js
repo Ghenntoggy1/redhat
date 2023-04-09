@@ -13,7 +13,8 @@ import {
 } from "@chakra-ui/react";
 import "../Clickable.css"
 import RH from '../RED HAT.svg';
-import {ArrowForwardIcon, CheckIcon} from "@chakra-ui/icons";
+import {ArrowForwardIcon} from "@chakra-ui/icons";
+import { Link as LLL} from 'react-router-dom';
 
 
 
@@ -27,7 +28,9 @@ export default function Header() {
   return (
     <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
       <GridItem colSpan={0}>
-        <Image src={RH} alt="Logo" />
+          <Button as={LLL} to="/" variant="link">
+        <Image src={RH} alt="Logo" w="70px" ml="16%"/>
+      </Button>
       </GridItem>
       <GridItem colSpan={3}>
         <InputGroup >

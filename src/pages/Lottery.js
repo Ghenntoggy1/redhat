@@ -1,16 +1,30 @@
 import '../App.css';
-import {Box, Center, ChakraProvider, Text, List, ListItem, OrderedList, HStack, Image} from '@chakra-ui/react'
+import {Box, Center, ChakraProvider, Text, ListItem, OrderedList, HStack, Image, Button} from '@chakra-ui/react'
+import RH from '../RED HAT.svg';
+import { Link } from 'react-router-dom';
+
 
 
 function lotto() {
     return (
+
+
         <ChakraProvider>
-            <Center
+
+            <Box
                 backgroundImage="url('https://scontent.fkiv8-1.fna.fbcdn.net/v/t39.30808-6/339320967_3224618044443444_1542757019928680227_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=QAFlrFFWFhkAX-KLO-s&_nc_ht=scontent.fkiv8-1.fna&oh=00_AfAdj5chlTS1bCwh3vfAsFYUG20R1PHiRL3zwPxlok_q_A&oe=64377054')"
                 minHeight="100vh"
                 minWidth="100vh"
-                alignItems="center"
+
             >
+                <Button as={Link} to="/" w="100px" ml="1%"  padding="1%" variant="link" >
+                        <Image src={RH} alt="Logo"   />
+
+                </Button>
+
+
+
+                <Center marginTop="-5%">
                 <Box minHeight="78vh" h="full"
                      w="900px"
                      boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
@@ -56,14 +70,14 @@ function lotto() {
                     <Center>
                     <HStack>
                         <Image src="https://o.remove.bg/downloads/df3bb207-f763-47c8-b195-bd34821b4ba6/6613f73d72328f430c6e55e3de5d3acccf-24-parenting-books-1.rsquare.w700-removebg-preview.png" w="100px"/>
-                        <Image src="" w="100px"/>
-                        <Image src="" w="100px"/>
-                        <Image src="" w="100px"/>
-                        <Image src="" w="100px"/>
+                        <Image src="https://o.remove.bg/downloads/9f53e134-9b58-433e-9fd5-94764169a12d/st_small_507x507-pad_600x600_f8f8f8-removebg-preview.png" w="100px"/>
+                        <Image src="https://cdn.shopify.com/s/files/1/2471/4056/products/brownhoodie_2000x.png?v=1584555294%20alt=%E2%80%9DCM%20BROWN%20HOODIE" w="100px"/>
+                        <Image src="https://o.remove.bg/downloads/681bc71f-3cae-4291-8359-547b5959befa/KCZ-MS-L1-2925-nylon-cozy_sand-multi_flat-lil-removebg-preview.png" w="100px"/>
+                        <Image src="https://o.remove.bg/downloads/bc05c0f0-a3f9-440d-8022-0ab9ad6a6dd3/laptop-graduation-cap-wifi-icon-260nw-1009520221-removebg-preview.png" w="100px"/>
 
                     </HStack>
                     </Center>
-                    <Text textAlign="center" fontWeight="bold">
+                    <Text textAlign="center" fontWeight="bold" padding="2%">
                         Sponsors:
                     </Text>
                     <Center>
@@ -76,7 +90,8 @@ function lotto() {
                     </HStack>
             </Center>
                 </Box>
-            </Center>
+                </Center>
+            </Box>
 
         </ChakraProvider>
     );

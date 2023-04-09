@@ -12,9 +12,12 @@ import {
     ListItem,
     Icon,
     Flex,
-    Link}
-from "@chakra-ui/react";
+    Link, Button
+}
+    from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons";
+import { Link as LLL} from 'react-router-dom';
+
 
 
 export default function Dalle() {
@@ -27,7 +30,9 @@ export default function Dalle() {
     };
     const items = ["What is the process of voting?", "How would Rick explain the voting process in Moldova?",
         "What would Maya Sandu do if she were a samurai?", "Why should I go to the vote?", "Where is the lottery?"]
+
     const ProcesedAnswer= "text..."
+
     const Links = {
         Link1: "https://anticoruptie.md/ro/dosare-de-coruptie/veaceslav-platon-in-fata-unei-decizii-care-ii-va-schimba-viata",
         Link2: "https://moldova.europalibera.org/a/31391754.html"
@@ -81,6 +86,22 @@ export default function Dalle() {
                                 <Link href={Links.Link2}>{Links.Link2}</Link>
                             </Flex>
                         </VStack>
+
+
+
+                        <HStack>
+                            <Button as={LLL} to="https://discord.gg/FJgahUk6"
+                                    position="absolute"
+                                    bottom="120" w="100px" left="525px">
+                                Share
+                            </Button>
+                            <Button
+                                    position="absolute"
+                                    bottom="120" w="100px" left="925px" background={"#9E45C8"}>
+                                Share
+                            </Button>
+                        </HStack>
+
 
                     </Box>
                 </Container>
