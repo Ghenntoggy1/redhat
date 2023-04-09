@@ -3,6 +3,7 @@ import { Grid, GridItem, Image, Input, InputGroup, InputRightElement, Button,Uno
 import "./Clickable.css"
 import iconS  from "./Vector.svg";
 import iconL from "./listIco.png"
+import RH from './RED HAT.svg';
 
 
 function Header() {
@@ -14,7 +15,7 @@ function Header() {
   return (
     <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
       <GridItem colSpan={0}>
-        <Image src={"https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg"} alt="Logo" />
+        <Image src={RH} alt="Logo" />
       </GridItem>
       <GridItem colSpan={3}>
         <InputGroup>
