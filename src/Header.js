@@ -5,7 +5,7 @@ import iconS  from "./Vector.svg";
 import iconL from "./listIco.png"
 
 
-function Header() {
+export default function Header() {
     const handleClick = (item) => {
         console.log(`You clicked on ${item}`);
       };
@@ -48,4 +48,3 @@ function Header() {
   );
 }
 
-export default Header;
