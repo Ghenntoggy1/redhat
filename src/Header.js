@@ -9,11 +9,9 @@ import {
     Button,
     UnorderedList,
     ListItem,
-    IconButton,
     Icon,
 } from "@chakra-ui/react";
 import "./Clickable.css"
-import iconS  from "./Vector.svg";
 import RH from './RED HAT.svg';
 import {ArrowForwardIcon, CheckIcon} from "@chakra-ui/icons";
 
@@ -33,7 +31,7 @@ export default function Header() {
         <InputGroup >
             <Input boxShadow="lg" borderColor="white" background="white" placeholder="Enter person name" />
             <InputRightElement>
-                <Button backgroundColor={"white"}><Icon as="CheckIcon"/></Button>
+                <Button backgroundColor={"white"} textColor={"#9E45C8"}><CheckIcon/></Button>
             </InputRightElement>
         </InputGroup>
       </GridItem>

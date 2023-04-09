@@ -13,7 +13,6 @@ import {
     Icon,
     Flex}
 from "@chakra-ui/react";
-import iconL from "./listIco.png"
 import {ArrowForwardIcon} from "@chakra-ui/icons";
 
 
