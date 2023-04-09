@@ -3,7 +3,7 @@
     cursor: pointer;
   }
 .list-underline::before {
-    content: "➤";
+    content: "";
     margin-right: 0.5rem;
   }
   .list-underline {

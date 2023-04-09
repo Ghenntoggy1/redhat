@@ -1,9 +1,21 @@
 import React from "react";
-import { Grid, GridItem, Image, Input, InputGroup, InputRightElement, Button,UnorderedList, ListItem, IconButton   } from "@chakra-ui/react";
+import {
+    Grid,
+    GridItem,
+    Image,
+    Input,
+    InputGroup,
+    InputRightElement,
+    Button,
+    UnorderedList,
+    ListItem,
+    IconButton,
+    Icon,
+} from "@chakra-ui/react";
 import "./Clickable.css"
 import iconS  from "./Vector.svg";
-import iconL from "./listIco.png"
 import RH from './RED HAT.svg';
+import {ArrowForwardIcon, CheckIcon} from "@chakra-ui/icons";
 
 
 export default function Header() {
@@ -18,16 +30,16 @@ export default function Header() {
         <Image src={RH} alt="Logo" />
       </GridItem>
       <GridItem colSpan={3}>
-        <InputGroup>
-            <Input placeholder="Enter person name" />
+        <InputGroup >
+            <Input boxShadow="lg" borderColor="white" background="white" placeholder="Enter person name" />
             <InputRightElement>
-                <IconButton icon={iconS} onClick={handleClick} aria-label="Search"  style={{width:100}}/>
+                <Button backgroundColor={"white"}><Icon as="CheckIcon"/></Button>
             </InputRightElement>
         </InputGroup>
       </GridItem>
       <GridItem colSpan={5}>
         <InputGroup>
-          <Input placeholder="Enter your email" />
+          <Input  boxShadow="lg" borderColor="white" background="white" placeholder="Enter your email" />
           <InputRightElement width="auto">
             <Button backgroundColor={"whiteAlpha.100"} textColor={"#9E45C8"}>Generate</Button>
           </InputRightElement>
@@ -40,6 +52,7 @@ export default function Header() {
               key={index}
               color={index === items.length - 1 ? "red.500" : "black.500"}
             >
+                <Icon as={ArrowForwardIcon}/>
              {item}
             </ListItem>
       ))}

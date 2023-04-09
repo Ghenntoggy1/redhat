@@ -1,6 +1,20 @@
 import React from "react";
-import {Grid, GridItem, Image, Box, VStack, HStack, Text, Container, UnorderedList, ListItem} from "@chakra-ui/react";
+import {
+    Grid,
+    GridItem,
+    Image,
+    Box,
+    VStack,
+    HStack,
+    Text,
+    Container,
+    UnorderedList,
+    ListItem,
+    Icon,
+    Flex}
+from "@chakra-ui/react";
 import iconL from "./listIco.png"
+import {ArrowForwardIcon} from "@chakra-ui/icons";
 
 
 export default function Dalle() {
@@ -13,6 +27,11 @@ export default function Dalle() {
     };
     const items = ["What is the process of voting?", "How would Rick explain the voting process in Moldova?",
         "What would Maya Sandu do if she were a samurai?", "Why should I go to the vote?", "Where is the lottery?"]
+    const ProcesedAnswer= "text..."
+    const Links = {
+        Link1: "https://anticoruptie.md/ro/dosare-de-coruptie/veaceslav-platon-in-fata-unei-decizii-care-ii-va-schimba-viata",
+        Link2: "https://moldova.europalibera.org/a/31391754.html"
+    }
     return (
         <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
             <GridItem colSpan={0}/>
@@ -49,11 +68,18 @@ export default function Dalle() {
                          aligItem="Center"
                          background="white"
                     >
-                        <VStack>
-                            <Text leftPadding="5%" rightPadding="5%">
-
+                        <VStack alignItems="left" padding="5%">
+                            <Text>
+                                {ProcesedAnswer}
                             </Text>
-
+                            <Flex>
+                                <Icon as={ArrowForwardIcon}/>
+                                <Text>{Links.Link1}</Text>
+                            </Flex>
+                            <Flex>
+                                <Icon as={ArrowForwardIcon}/>
+                                <Text >{Links.Link2}</Text>
+                            </Flex>
                         </VStack>
 
                     </Box>
@@ -61,7 +87,7 @@ export default function Dalle() {
 
             </GridItem>
             <GridItem colSpan={3}>
-                <UnorderedList backgroundColor={"white"} style={{ listStyleType: "none", margin: "0rem 0", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)", borderRadius: "6px", padding: "5% 5% 5% 5%"} }>
+                <UnorderedList backgroundColor={"white"} style={{ listStyleType: "none", margin: "0rem 0", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)", borderRadius: "6px", padding: "5% 5% 5% 5%", opacity:"0"} }>
                     {items.map((item, index) => (
                         <ListItem onClick={() => handleClick(item)} className = "list-underline"
                                   key={index}
