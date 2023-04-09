@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
+import {ChakraProvider, VStack} from '@chakra-ui/react'
 
 import Header from './Header';
+import Dalle from './Dalle';
 
 function App() {
   return (
     <ChakraProvider>
-      <Header/>
+        <VStack>
+            <Header/>
+            <Dalle/>
+        </VStack>
+
     </ChakraProvider>
   );
 }

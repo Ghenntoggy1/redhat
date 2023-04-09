@@ -6,7 +6,7 @@ import iconL from "./listIco.png"
 import RH from './RED HAT.svg';
 
 
-function Header() {
+export default function Header() {
     const handleClick = (item) => {
         console.log(`You clicked on ${item}`);
       };
@@ -49,4 +49,3 @@ function Header() {
   );
 }
 
-export default Header;
