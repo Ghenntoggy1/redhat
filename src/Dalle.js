@@ -11,8 +11,8 @@ export default function Dalle() {
         <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
             <GridItem colSpan={0}/>
             <GridItem colSpan={3}>
-                <Container bg="#FFFFFF" border="" alignSelf="center" >
-                    <Box w="full" minHeight="78vh" h="full"  boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)" borderRadius="md" aligItem="Center">
+                <Container bg="#FFFFFF" alignSelf="center" >
+                    <Box w="full" minHeight="78vh" h="full"  boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)" borderRadius="6px" aligItem="Center">
                         <VStack alignItems="center" spacing={4} flexDir="column" paddingTop="40px">
                             <Image src={Images.Image1} alt="otter1" w="200px" h="200px"/>
                             <HStack spacing={1}>
@@ -20,15 +20,12 @@ export default function Dalle() {
                                 <Image src={Images.Image1} alt="otter3" w="65px" h="65px"/>
                                 <Image src={Images.Image1} alt="otter4" w="65px" h="65px"/>
                             </HStack>
-                            <Text>
+                            <Text leftPadding="5%" rightPadding="5%">
                                 “how cool looks and otter boi in hd”
                             </Text>
                         </VStack>
                 </Box>
                 </Container>
-            </GridItem>
-            <GridItem colSpan={5}>
-
             </GridItem>
         </Grid>
     );

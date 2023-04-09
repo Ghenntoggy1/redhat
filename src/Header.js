@@ -34,7 +34,7 @@ export default function Header() {
         </InputGroup>
       </GridItem>
       <GridItem colSpan={3}  >
-      <UnorderedList backgroundColor={"aqua"} style={{ listStyleType: "none", margin: "0rem 0", boxShadow: "inset", borderRadius: "md", padding: "5% 5% 5% 5%"} }>
+      <UnorderedList backgroundColor={"white"} style={{ listStyleType: "none", margin: "0rem 0", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)", borderRadius: "6px", padding: "5% 5% 5% 5%"} }>
         {items.map((item, index) => (
             <ListItem onClick={() => handleClick(item)} className = "list-underline"
               key={index}
