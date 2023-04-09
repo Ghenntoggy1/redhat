@@ -12,7 +12,7 @@ import {
     ListItem,
     Icon,
     Flex,
-    Link, Button
+    Link, Button, Divider
 }
     from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons";
@@ -25,9 +25,7 @@ export default function Dalle() {
         Image1: "https://cdn.openai.com/labs/images/%22A%20sea%20otter%20with%20a%20pearl%20earring%22%20by%20Johannes%20Vermeer.webp?v=1",
         Name1: "otter"
     }
-    const handleClick = (item) => {
-        console.log(`You clicked on ${item}`);
-    };
+
     const items = ["What is the process of voting?", "How would Rick explain the voting process in Moldova?",
         "What would Maya Sandu do if she were a samurai?", "Why should I go to the vote?", "Where is the lottery?"]
 
@@ -38,13 +36,14 @@ export default function Dalle() {
         Link2: "https://moldova.europalibera.org/a/31391754.html"
     }
     return (
-        <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
+        <Grid templateColumns="repeat(12, 1fr)" gap={12}  p={4}>
             <GridItem colSpan={0}/>
-            <GridItem colSpan={3} style = {{marginTop: " -50%"}}>
+
+
+            <GridItem colSpan={3} >
                 <Container alignSelf="center" >
-                    <Box w="full"
-                         minHeight="78vh"
-                         h="full"
+                    <Box w="300px"
+                         minHeight="50vh"
                          boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
                          borderRadius="6px"
                          aligItem="Center"
@@ -64,29 +63,73 @@ export default function Dalle() {
                 </Box>
                 </Container>
             </GridItem>
-            <GridItem colSpan={5} style = {{marginTop: " -29%"}}>
-                <Container alignSelf="center">
-                    <Box w="full"
+            <GridItem colSpan={8} >
+
+                <Container  >
+                    <Box w="900px"
+                         ml="-30%"
+                         padding="5%"
+
+
                          minHeight="78vh" h="full"
                          boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
                          borderRadius="6px"
                          aligItem="Center"
                          bg="rgba(255, 255, 255, 0.65)"
                     >
-                        <VStack alignItems="left" padding="5%">
-                            <Text>
-                                {ProcesedAnswer}
-                            </Text>
-                            <Flex>
-                                <Icon as={ArrowForwardIcon}/>
-                                <Link href={Links.Link1}>{Links.Link1}</Link>
-                            </Flex>
-                            <Flex>
-                                <Icon as={ArrowForwardIcon}/>
-                                <Link href={Links.Link2}>{Links.Link2}</Link>
-                            </Flex>
-                        </VStack>
+                        <HStack>
+                            <VStack alignItems="left" padding="5%">
+                                <Text>
+                                    {ProcesedAnswer}
+                                </Text>
+                                <Flex>
+                                    <Icon as={ArrowForwardIcon}/>
+                                    <Link href={Links.Link1}>{Links.Link1}</Link>
+                                </Flex>
+                                <Flex>
+                                    <Icon as={ArrowForwardIcon}/>
+                                    <Link href={Links.Link2}>{Links.Link2}</Link>
+                                </Flex>
+                            </VStack>
 
+                            <Divider orientation="vertical" color="blue.500" thickness="2px" marginY="2" />
+
+                            <UnorderedList
+                                listStyleType="none"
+
+                            >
+                                <ListItem>
+                                    <Link href="#">
+                                        <ArrowForwardIcon />
+                                        {items[0]}
+                                    </Link>
+                                </ListItem>
+                                <ListItem>
+                                    <Link href="#">
+                                        <ArrowForwardIcon />
+                                        {items[1]}
+                                    </Link>
+                                </ListItem>
+                                <ListItem>
+                                    <Link href="#">
+                                        <ArrowForwardIcon />
+                                        {items[2]}
+                                    </Link>
+                                </ListItem>
+                                <ListItem>
+                                    <Link href="#">
+                                        <ArrowForwardIcon />
+                                        {items[3]}
+                                    </Link>
+                                </ListItem>
+                                <ListItem>
+                                    <Link href="/lottery" color="red">
+                                        <ArrowForwardIcon />
+                                        {items[4]}
+                                    </Link>
+                                </ListItem>
+                            </UnorderedList>
+                        </HStack>
 
 
                         <HStack>
@@ -97,27 +140,20 @@ export default function Dalle() {
                             </Button>
                             <Button
                                     position="absolute"
-                                    bottom="120" w="100px" left="925px" background={"#9E45C8"}>
-                                Share
+                                    bottom="120" w="100px" left="925px" bg="rgb(176,139,255,0.76)" textColor={"black"}>
+                                Clear
                             </Button>
                         </HStack>
+
 
 
                     </Box>
                 </Container>
 
-            </GridItem>
-            <GridItem colSpan={3}>
-                <UnorderedList backgroundColor={"white"} style={{ listStyleType: "none", margin: "0rem 0", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)", borderRadius: "6px", padding: "5% 5% 5% 5%", opacity:"0"} }>
-                    {items.map((item, index) => (
-                        <ListItem onClick={() => handleClick(item)} className = "list-underline"
-                                  key={index}
-                                  color={index === items.length - 1 ? "red.500" : "black.500"}
-                        >
-                            {item}
-                        </ListItem>
-                    ))}
-                </UnorderedList>
+
+
+
+
             </GridItem>
         </Grid>
     );

@@ -26,11 +26,11 @@ export default function Header() {
         "Why should I go to the vote?",
         "Where is the lottery?"]
   return (
-    <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
+    <Grid templateColumns="repeat(12, 1fr)" gap={12}  p={4} >
       <GridItem colSpan={0}>
           <Button as={LLL} to="/" variant="link">
-        <Image src={RH} alt="Logo" w="70px" ml="16%"/>
-      </Button>
+              <Image src={RH} alt="Logo" w="70px" />
+          </Button>
       </GridItem>
       <GridItem colSpan={3}>
         <InputGroup >
@@ -40,7 +40,7 @@ export default function Header() {
             </InputRightElement>
         </InputGroup>
       </GridItem>
-      <GridItem colSpan={5}>
+      <GridItem colSpan={8}>
         <InputGroup>
           <Input  boxShadow="lg" borderColor="white" background="white" placeholder="Generate Text" />
           <InputRightElement width="auto">
@@ -48,49 +48,7 @@ export default function Header() {
           </InputRightElement>
         </InputGroup>
       </GridItem>
-      <GridItem colSpan={3}  >
-          <UnorderedList
-              bg="rgba(255, 255, 255, 0.65)"
-              style={{
-                  listStyleType: "none",
-                  margin: "0rem 0",
-                  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                  borderRadius: "6px",
-                  padding: "5% 5% 5% 5%",
-              }}
-          >
-              <ListItem>
-                  <Link href="#">
-                      <ArrowForwardIcon />
-                      {items[0]}
-                  </Link>
-              </ListItem>
-              <ListItem>
-                  <Link href="#">
-                      <ArrowForwardIcon />
-                      {items[1]}
-                  </Link>
-              </ListItem>
-              <ListItem>
-                  <Link href="#">
-                      <ArrowForwardIcon />
-                      {items[2]}
-                  </Link>
-              </ListItem>
-              <ListItem>
-                  <Link href="#">
-                      <ArrowForwardIcon />
-                      {items[3]}
-                  </Link>
-              </ListItem>
-              <ListItem>
-                  <Link href="/lottery" color="red">
-                      <ArrowForwardIcon />
-                      {items[4]}
-                  </Link>
-              </ListItem>
-          </UnorderedList>
-      </GridItem>
+
     </Grid>
   );
 }
