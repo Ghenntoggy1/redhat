@@ -1,6 +1,8 @@
 import React from "react";
-import { Grid, GridItem, Image, Input, InputGroup, InputRightElement, Button,UnorderedList, ListItem  } from "@chakra-ui/react";
+import { Grid, GridItem, Image, Input, InputGroup, InputRightElement, Button,UnorderedList, ListItem, IconButton   } from "@chakra-ui/react";
 import "./Clickable.css"
+import iconS  from "./Vector.svg";
+import iconL from "./listIco.png"
 
 
 function Header() {
@@ -15,7 +17,12 @@ function Header() {
         <Image src={"https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg"} alt="Logo" />
       </GridItem>
       <GridItem colSpan={3}>
-        <Input placeholder="Enter person name" />
+        <InputGroup>
+            <Input placeholder="Enter person name" />
+            <InputRightElement>
+                <IconButton icon={iconS} onClick={handleClick} aria-label="Search"  style={{width:100}}/>
+            </InputRightElement>
+        </InputGroup>
       </GridItem>
       <GridItem colSpan={5}>
         <InputGroup>
@@ -26,11 +33,14 @@ function Header() {
         </InputGroup>
       </GridItem>
       <GridItem colSpan={3}  >
-      <UnorderedList backgroundColor={"white"} style={{ listStyleType: "none" }}>
-      {items.map((item) => (
-        <ListItem key={item} onClick={() => handleClick(item)} className = "list-underline">
-          {item}
-        </ListItem>
+      <UnorderedList backgroundColor={"aqua"} style={{ listStyleType: "none", margin: "0rem 0", boxShadow: "inset", borderRadius: "md", padding: "5% 5% 5% 5%"} }>
+        {items.map((item, index) => (
+            <ListItem onClick={() => handleClick(item)} className = "list-underline"
+              key={index}
+              color={index === items.length - 1 ? "red.500" : "black.500"}
+            >
+             {item}
+            </ListItem>
       ))}
     </UnorderedList>
       </GridItem>
