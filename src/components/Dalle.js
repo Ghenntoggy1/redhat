@@ -11,7 +11,8 @@ import {
     UnorderedList,
     ListItem,
     Icon,
-    Flex}
+    Flex,
+    Link}
 from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons";
 
@@ -34,7 +35,7 @@ export default function Dalle() {
     return (
         <Grid templateColumns="repeat(12, 1fr)" gap={4}  p={4}>
             <GridItem colSpan={0}/>
-            <GridItem colSpan={3} style = {{marginTop: " -60%"}}>
+            <GridItem colSpan={3} style = {{marginTop: " -50%"}}>
                 <Container alignSelf="center" >
                     <Box w="full"
                          minHeight="78vh"
@@ -42,7 +43,7 @@ export default function Dalle() {
                          boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
                          borderRadius="6px"
                          aligItem="Center"
-                         background="white"
+                         bg="rgba(255, 255, 255, 0.65)"
                     >
                         <VStack alignItems="center" spacing={4} flexDir="column" paddingTop="40px">
                             <Image src={Images.Image1} alt="otter1" w="200px" h="200px"/>
@@ -58,14 +59,14 @@ export default function Dalle() {
                 </Box>
                 </Container>
             </GridItem>
-            <GridItem colSpan={5} style = {{marginTop: " -35.5%"}}>
+            <GridItem colSpan={5} style = {{marginTop: " -29%"}}>
                 <Container alignSelf="center">
                     <Box w="full"
                          minHeight="78vh" h="full"
                          boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
                          borderRadius="6px"
                          aligItem="Center"
-                         background="white"
+                         bg="rgba(255, 255, 255, 0.65)"
                     >
                         <VStack alignItems="left" padding="5%">
                             <Text>
@@ -73,11 +74,11 @@ export default function Dalle() {
                             </Text>
                             <Flex>
                                 <Icon as={ArrowForwardIcon}/>
-                                <Text>{Links.Link1}</Text>
+                                <Link href={Links.Link1}>{Links.Link1}</Link>
                             </Flex>
                             <Flex>
                                 <Icon as={ArrowForwardIcon}/>
-                                <Text >{Links.Link2}</Text>
+                                <Link href={Links.Link2}>{Links.Link2}</Link>
                             </Flex>
                         </VStack>
 

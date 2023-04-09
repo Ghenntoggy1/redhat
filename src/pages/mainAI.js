@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import {Box, ChakraProvider, VStack} from '@chakra-ui/react'
 
+import Header from '../components/Header';
+import Dalle from '../components/Dalle';
 
 function App() {
     return (
@@ -11,8 +13,12 @@ function App() {
                 minHeight="100vh"
                 minWidth="100vh"
             >
-
+                <VStack>
+                    <Header/>
+                    <Dalle/>
+                </VStack>
             </Box>
+
 
         </ChakraProvider>
     );

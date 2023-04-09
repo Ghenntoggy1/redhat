@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Box, Icon, Text } from '@chakra-ui/react';
-import icon from "./RED HAT.svg"
+import icon from "../RED HAT.svg"
 function MainFiekd() {
   return (
     <Flex
