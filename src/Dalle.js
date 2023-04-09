@@ -34,6 +34,26 @@ export default function Dalle() {
                 </Box>
                 </Container>
             </GridItem>
+            <GridItem colSpan={5}>
+                <Container alignSelf="center">
+                    <Box w="full"
+                         minHeight="78vh" h="full"
+                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)"
+                         borderRadius="6px"
+                         aligItem="Center"
+                         background="white"
+                    >
+                        <VStack>
+                            <Text leftPadding="5%" rightPadding="5%">
+
+                            </Text>
+
+                        </VStack>
+
+                    </Box>
+                </Container>
+
+            </GridItem>
         </Grid>
     );
 }
