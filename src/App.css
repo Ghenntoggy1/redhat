@@ -1,5 +1,10 @@
+.bg{
+  background-image: url("./MAZ.png");
+}
 .App {
   text-align: center;
+  background-image: url("./MAZ.png");
+  background-size: cover;
 }
 
 .App-logo {
@@ -12,7 +17,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   min-height: 100vh;
   display: flex;
