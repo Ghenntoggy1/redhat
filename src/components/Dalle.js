@@ -48,6 +48,7 @@ export default function Dalle() {
                          borderRadius="6px"
                          aligItem="Center"
                          bg="rgba(255, 255, 255, 0.65)"
+                         ml="75px"
                     >
                         <VStack alignItems="center" spacing={4} flexDir="column" paddingTop="40px">
                             <Image src={Images.Image1} alt="otter1" w="200px" h="200px"/>
@@ -67,7 +68,7 @@ export default function Dalle() {
 
                 <Container  >
                     <Box w="900px"
-                         ml="-30%"
+                         ml="-50%"
                          padding="5%"
 
 
@@ -135,12 +136,12 @@ export default function Dalle() {
                         <HStack>
                             <Button as={LLL} to="https://discord.gg/FJgahUk6"
                                     position="absolute"
-                                    bottom="120" w="100px" left="525px">
+                                    bottom="120" w="100px" left="595px">
                                 Share
                             </Button>
                             <Button
                                     position="absolute"
-                                    bottom="120" w="100px" left="925px" bg="rgb(176,139,255,0.76)" textColor={"black"}>
+                                    bottom="120" w="100px" left="995px" bg="rgb(176,139,255,0.76)" textColor={"black"}>
                                 Clear
                             </Button>
                         </HStack>
