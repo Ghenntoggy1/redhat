@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+# RED HAT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Red Hat is a project developed and designed in the context of Hackaton at "Europa Liberă" where our aim was to make an web-app that would attract teen adults to go voting and also will entertain them. After all, our design was:
+<img width="1920" alt="MAZ (1)" src="https://user-images.githubusercontent.com/77546227/231114624-b02da4fe-fa96-4191-a0d3-e52b6e684e1b.png">
+We divided our design into three main parts: Entertain, Inform, and Motivate. Our main entertaining factor is the AI-generated images that are created in response to user input. In this design, the user input is 'Maia Sandu as a fictional character', and the images are generated accordingly. The team's thought was that by creating something funny and interesting, people would be more likely to check out our web app.
 
-## Available Scripts
+The informing part of our app was the text AI, which allowed users to input personalized prompts that would entertain and inform them. For this part, we used the fine-tune model from OpenAI, which we trained using our own dataset (primarily consisting of 100 prompts).
 
-In the project directory, you can run:
+The motivation part of our app was a lottery feature, where users could see that by voting, they would automatically be entered into a lottery with a high chance of winning. Unfortunately, our idea was not well-received by the jury, and the project will remain as a half-developed idea. However, our model can be found in 'fine-tune.py', and our dataset is stored in a file with the extension '.jsonl'. Thank you for your attention.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
